@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexei Kozovski - CV</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/assets/img/favicon.ico">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -19,6 +18,7 @@
                     <li class="nav-item"><a href="#contacts" class="nav-link">Contacts</a></li>
                     <li class="nav-item"><a href="#aboutMyself" class="nav-link">About myself</a></li>
                     <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
                     <li class="nav-item"><a href="#code" class="nav-link">Code</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
@@ -29,51 +29,51 @@
     </header>
     <main>
         <div class="main-container">
-            <div class="side-panel-container">
-                <div class="side-panel">
-                    <div class="side-panel-header-text">
-                        <img class="cv-photo" src="./assets/img/photo.jpg" alt="My photo">
+            <div class="info-container">
+                <div class="info">
+                    <div class="info__header-text">
+                        <img class="info__img" src="./assets/img/photo.jpg" alt="My photo">
                         <h1>Alexei Kozovski</h1>
                         <h2>Junior Frontend Developer</h2>
                     </div>
-                    <section class="side-panel-section" id="contacts">
-                        <div class="side-panel-section-header">
+                    <section class="info__section" id="contacts">
+                        <div class="info__section-header">
                             <div>
                                 <h2>Contacts</h2>
                             </div>
                         </div>
-                        <div class="side-panel-section-content">
+                        <div class="info__section-content">
                             <ul>
-                                <li style="list-style: none"><img src="./assets/img/github.svg" alt="github"> <a href="https://github.com/AlexeiKozovski/"> AlexeiKozovski</a></li>
-                                <li style="list-style: none"><img src="./assets/img/email.svg" alt="email"> <a href="mailto:akoz413@mail.ru"> akoz413@mail.ru</li>
-                                <li style="list-style: none"><img src="./assets/img/telegram.svg" alt="telegram"> <a href="#"> @AlexeiKozovski</a></li>
-                                <li style="list-style: none"><img src="./assets/img/discord.svg" alt="discord logo" width="16" height="16"> Alexei Kozovski.#3681</li>
+                                <li class="list-item"><img src="./assets/img/github.svg" alt="github"> <a href="https://github.com/AlexeiKozovski/"> AlexeiKozovski</a></li>
+                                <li class="list-item"><img src="./assets/img/email.svg" alt="email"> <a href="mailto:akoz413@mail.ru"> akoz413@mail.ru</a></li>
+                                <li class="list-item"><img src="./assets/img/telegram.svg" alt="telegram"> <a href="#"> @AlexeiKozovski</a></li>
+                                <li class="list-item"><img src="./assets/img/discord.svg" alt="discord logo" width="16" height="16"> Alexei Kozovski.#3681</li>
                             </ul>
                         </div>
                     </section>
-                    <section class="side-panel-section" id="skills">
-                        <div class="side-panel-section-header">
+                    <section class="info__section" id="skills">
+                        <div class="info__section-header">
                             <div>
                                 <h2>Skills</h2>
                             </div>
                         </div>
-                        <div class="side-panel-section-content">
-                            <ul style="list-style-type: circle; margin-left: 20px;">
-                                <li><i></i>Java Basic</li>
-                                <li><i></i>HTML, CSS</li>
-                                <li><i></i>JavaScript Basics</li>
-                                <li><i></i>Git, GitHub</li>
-                                <li><i></i>IntelliJ IDEA, VS Code</li>
+                        <div class="info__section-content">
+                            <ul>
+                                <li>Java Basic</li>
+                                <li>HTML, CSS</li>
+                                <li>JavaScript Basics</li>
+                                <li>Git, GitHub</li>
+                                <li>IntelliJ IDEA, VS Code</li>
                             </ul>
                         </div>
                     </section>
-                    <section class="side-panel-section" id="languages">
-                        <div class="side-panel-section-header">
+                    <section class="info__section" id="languages">
+                        <div class="info__section-header">
                             <div>
                                 <h2>Languages</h2>
                             </div>
                         </div>
-                        <div class="side-panel-section-content">
+                        <div class="info__section-content">
                             <ul>
                                 <li>English - В1 (B2 - Epam test)</li>
                             </ul>
@@ -81,14 +81,12 @@
                     </section>
                 </div>
             </div>
-            <div class="main-menu-container">
-                <section class="main-menu-container-section" id="aboutMyself">
-                    <div class="main-menu-section-header">
-                        <div>
-                            <h2>&bull;&nbsp;&nbsp;About myself&nbsp;&nbsp;&bull;</h2>
-                        </div>
+            <div class="main-info-container">
+                <section class="main-info__container-section" id="aboutMyself">
+                    <div class="main-info__section-header">
+                        <h2>About myself</h2>
                     </div>
-                    <div class="main-menu-section-content">
+                    <div class="main-info__section-content">
                         <p>I currently live and work in Minsk. I'm 34 years old. I work as an engineer in a design institute. 
                             I am engaged in the development of power supply and electric lighting systems.</p>
                         <p>I have always been interested in programming. Three years ago I decided to change my profession and become a programmer. 
@@ -97,22 +95,21 @@
                     </div>
                 </section>
                 <hr>
-                <section class="main-menu-container-section" id="experience">
-                    <div class="main-menu-section-header">
-                        <h2>&bull;&nbsp;&nbsp;Experience&nbsp;&nbsp;&bull;</h2>
+                <section class="main-info__container-section" id="experience">
+                    <div class="main-info__section-header">
+                        <h2>Experience</h2>
                     </div>
-                    <div class="main-menu-section-content">
-                        <ul>
-                            <li>I have no programming experience. I have some experience with programming courses on Java</li>
-                        </ul>
+                    <div class="main-info__section-content">
+                        <p>I have no programming experience. I have some experience with programming courses on Java and JavaScript</p>
                     </div>
                 </section>
                 <hr>
-                <section id="education" class="main-menu-container-section">
-                    <div class="main-menu-section-header">
-                        <h2>&bull;&nbsp;&nbsp;Education&nbsp;&nbsp;&bull;</h2>
+
+                <section id="education" class="main-info__container-section">
+                    <div class="main-info__section-header">
+                        <h2>Education</h2>
                     </div>
-                    <div class="main-menu-section-content">
+                    <div class="main-info__section-content">
                         <ul>
                             <li>Belarusian National Technical University
                                 <ul>
@@ -132,18 +129,21 @@
                             <li>RS School
                                 <ul>
                                     <li>JavaScript/Front-end. Stage#0 </li>
-                                    <li>JavaScript/Front-end. Stage#1 (in progress...)</li>
+                                    <li>JavaScript/Front-end. Stage#1 </li>
+                                    <li>JavaScript/Front-end. Stage#2 (in progress...)</li>
                                 </ul>
                             </li>
                         </ul>
                     </div>
                 </section>
                 <hr>
-                <section id="code" class="main-menu-container-section">
-                    <div class="main-menu-section-header">
-                        <h2>&bull;&nbsp;&nbsp;Code&nbsp;&nbsp;&bull;</h2>
+                <section id="code" class="main-info__container-section">
+                    <div class="main-info__section-header">
+                        <h2>Code</h2>
                     </div>
-                    <div class="main-menu-section-content">
+                    <div class="main-info__section-content">
+                        <h3>Codewars Kata: Can we divide it?</h3>
+                        <p>Your task is to create the function isDivideBy to check if an integer number is divisible by both integers a and b.</p>
                         <pre>
 let isDivideBy = (number, a, b) => {
     if (number % a === 0 && number % b === 0) {
@@ -151,18 +151,17 @@ let isDivideBy = (number, a, b) => {
     } else {
       return false
     }
-  }
-                        </pre>
+  }                     </pre>
                     </div>
                 </section>
             </div>
         </div>
     </main>
     <footer class="footer">
-        <div><a href="https://rs.school/js/" target="_blank"><img src="./assets/img/rss.png"
+        <div><a href="https://rs.school/js/" target="_blank"><img class="footer__img" src="./assets/img/rss.png"
                     alt="rsschool logo"></a></div>
         <div>&copy;2022</div>
-        <div><a href="https://github.com/AlexeiKozovski/" target="_blank"><img src="./assets/img/GitHub_Logo.png"
+        <div><a href="https://github.com/AlexeiKozovski/" target="_blank"><img class="footer__img" src="./assets/img/GitHub_Logo.png"
                     alt="github logo"></a>
         </div>
     </footer>
